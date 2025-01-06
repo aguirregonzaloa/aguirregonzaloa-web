@@ -1,0 +1,30 @@
+---
+import ExperienceItem from "./ExperienceItem.astro"
+const EXPERIENCIE = [
+  {
+    date: "Actualmente...",
+    title: "Freelancer - Home Office",
+    company: "Fiverr - Freelancer",
+    description:
+      "Explorando el mundo del freelancer en distintas plataformas como por ejemplo Workana, Fiverr, etc.  Utilizando los conocimiento obtenidos en estos años como desarrollador. Ofreciendo soluciones a clientes con frameworks como AstroJS, WordPress, Laravel, entre otros.",
+    // link: "https://twitch.tv/midudev",
+  },
+  {
+    date: "Marzo - Junio 2022",
+    title: "Frontend Junior",
+    company: "Crombie",
+    description:
+      "Realicé tarea como maquetado de diseños en Figma pasar a código en HTML, CSS y JavaScript. Un proyecto en ReactJS utilizando sus principales hooks. Mantenimiento en proyecto en Wordpress. Aprendizaje de uso de herramientos como Slack, Jira, Bitbucket, entre otros.",
+  },
+]
+---
+
+<ol class="relative mt-16">
+  {
+    EXPERIENCIE.map((experiencie) => (
+      <li class="">
+        <ExperienceItem {...experiencie} />
+      </li>
+    ))
+  }
+</ol>
