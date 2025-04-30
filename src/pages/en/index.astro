@@ -1,14 +1,16 @@
 ---
 import Layout from "@/layouts/Layout.astro"
 
-import AboutMe from "@/components/AboutMe.astro"
+
+import AboutMe from "@/components/en/AboutMe.astro"
 import Briefcase from "@/components/icons/Briefcase.astro"
 import CodeIcon from "@/components/icons/Code.astro"
-import Experience from "@/components/Experience.astro"
+import Experience from "@/components/en/Experience.astro"
 import ProfileCheck from "@/components/icons/ProfileCheck.astro"
-import Projects from "@/components/Projects.astro"
-import SectionContainer from "@/components/SectionContainer.astro"
-import Hero from "@/components/Hero.astro"
+import Projects from "@/components/en/Projects.astro"
+import SectionContainer from "@/components/en/SectionContainer.astro"
+import Hero from "@/components/en/Hero.astro"
+
 ---
 
 <Layout
@@ -22,15 +24,6 @@ import Hero from "@/components/Hero.astro"
     </Hero>
     </SectionContainer>
     <div class="space-y-24">
-    <SectionContainer id="experiencia">
-      <h2
-        class="flex items-center mb-6 text-3xl font-semibold gap-x-3 text-black/80 dark:text-white"
-      >
-        <Briefcase class="size-8" />
-       Experience
-      </h2>
-      <Experience />
-    </SectionContainer>
 
     <SectionContainer id="proyectos">
       <h2
@@ -40,6 +33,17 @@ import Hero from "@/components/Hero.astro"
         Projects
       </h2>
       <Projects />
+    </SectionContainer>
+
+    <SectionContainer id="experiencia">
+      <h2
+        class="flex items-center mb-6 text-3xl font-semibold gap-x-3 text-black/80 dark:text-white"
+      >
+        <Briefcase class="size-8" />
+        Experiencie
+      </h2>
+      <Experience />
+
     </SectionContainer>
 
     <SectionContainer id="sobre-mi">
