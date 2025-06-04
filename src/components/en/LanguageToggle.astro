@@ -6,23 +6,25 @@ const LANGUAGES = [{name:"Spanish", url:"/", label:"sp"}, {name:"English", url:"
 
 <div class="relative ml-1 mr-1">
   <button
-    id="language-toggle-btn"
-    class="appearance-none border-none flex hover:scale-125 transition"
-  >
-    <!-- <span class="sr-only">Elige el tema</span> -->
-    <!-- <SunIcon id="light" class="language-toggle-icon size-5 transition-all" />
-    <MoonIcon
-      id="dark"
-      class="language-toggle-icon absolute size-5 transition-all"
-    />
-    <SystemIcon
-      id="system"
-      class="language-toggle-icon absolute size-5 transition-all"
-    /> -->
-    <Global id="language" class="language-toggle-icon size-5 transition-all" />
+   transition:persist
+   id="language-toggle-btn"
+   class="appearance-none border-none flex hover:scale-125 transition"
+   >
+   <!-- <span class="sr-only">Elige el tema</span> -->
+   <!-- <SunIcon id="light" class="language-toggle-icon size-5 transition-all" />
+   <MoonIcon
+   id="dark"
+   class="language-toggle-icon absolute size-5 transition-all"
+   />
+   <SystemIcon
+   id="system"
+   class="language-toggle-icon absolute size-5 transition-all"
+   /> -->
+   <Global id="language" class="language-toggle-icon size-5 transition-all" />
   </button>
   <div
-    id="languages-menu"
+  transition:persist
+  id="languages-menu"
     class="absolute hidden scale-80 top-8 right-0 text-sm p-1 min-w-[8rem] rounded-md border border-gray-100 bg-white/90 dark:bg-gray-900/90 dark:border-gray-500/20 shadow-[0_3px_10px_rgb(0,0,0,0.2)] backdrop-blur-md"
   >
     <ul>

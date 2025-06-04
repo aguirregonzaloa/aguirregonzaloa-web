@@ -10,9 +10,9 @@ const navItems = [
     url: "/en/#projects",
   },
   {
-    title: "Experience",
-    label: "experience",
-    url: "/en/#experience",
+    title: "Experiences",
+    label: "experiences",
+    url: "/en/#experiences",
   },
   {
     title: "About me",
@@ -39,12 +39,12 @@ const navItems = [
         </a>
       ))
     }
-    <ThemeToggle />
-    <LanguageToggle />
+  <ThemeToggle />
+  <LanguageToggle />
   </nav>
 </header>
 
-<script>
+<script >
   document.addEventListener("astro:page-load", () => {
     const sections = document.querySelectorAll("section");
     const navItems = document.querySelectorAll("header nav a");
@@ -84,6 +84,7 @@ const navItems = [
       }
     };
   });
+
 </script>
 
 <style>
